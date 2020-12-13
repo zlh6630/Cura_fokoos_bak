@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{294A990B-453A-3B8A-B3C2-8B0D90A91478}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>Nightly</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\Cura-4.8.0\cmake_build\CMakeFiles\2b7c8f5a4f7235a258c4ce2068ffce81\Nightly.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\Cmake\bin\ctest.exe -C $(Configuration) -D Nightly
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\dev\Cura-4.8.0\cmake_build\CMakeFiles\Nightly</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\Cmake\bin\ctest.exe -C $(Configuration) -D Nightly
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\dev\Cura-4.8.0\cmake_build\CMakeFiles\Nightly</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+D:\Cmake\bin\ctest.exe -C $(Configuration) -D Nightly
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\dev\Cura-4.8.0\cmake_build\CMakeFiles\Nightly</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+D:\Cmake\bin\ctest.exe -C $(Configuration) -D Nightly
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\dev\Cura-4.8.0\cmake_build\CMakeFiles\Nightly</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\Cura-4.8.0\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/dev/Cura-4.8.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\Cmake\bin\cmake.exe -SC:/dev/Cura-4.8.0 -BC:/dev/Cura-4.8.0/cmake_build --check-stamp-file C:/dev/Cura-4.8.0/cmake_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\dev\Cura-4.8.0\cmake\CuraPluginInstall.cmake;C:\dev\Cura-4.8.0\cmake\CuraTests.cmake;C:\dev\Cura-4.8.0\cmake_build\CMakeFiles\3.19.0-rc3\CMakeCCompiler.cmake;C:\dev\Cura-4.8.0\cmake_build\CMakeFiles\3.19.0-rc3\CMakeCXXCompiler.cmake;C:\dev\Cura-4.8.0\cmake_build\CMakeFiles\3.19.0-rc3\CMakeRCCompiler.cmake;C:\dev\Cura-4.8.0\cmake_build\CMakeFiles\3.19.0-rc3\CMakeSystem.cmake;C:\dev\Cura-4.8.0\cmake_build\CMakeFiles\feature_tests.cxx;C:\dev\Cura-4.8.0\cura.desktop.in;C:\dev\Cura-4.8.0\cura\CuraVersion.py.in;C:\dev\Uranium\cmake\UraniumTranslationTools.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeCCompiler.cmake.in;D:\Cmake\share\cmake-3.19\Modules\CMakeCCompilerABI.c;D:\Cmake\share\cmake-3.19\Modules\CMakeCInformation.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeCXXCompiler.cmake.in;D:\Cmake\share\cmake-3.19\Modules\CMakeCXXCompilerABI.cpp;D:\Cmake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeCompilerIdDetection.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineCCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineCXXCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineCompileFeatures.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineCompilerABI.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineCompilerId.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineRCCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineSystem.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeFindBinUtils.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeParseArguments.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeRCCompiler.cmake.in;D:\Cmake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeSystem.cmake.in;D:\Cmake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeTestCCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeTestCXXCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeTestCompilerCommon.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeTestRCCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CTest.cmake;D:\Cmake\share\cmake-3.19\Modules\CTestTargets.cmake;D:\Cmake\share\cmake-3.19\Modules\CTestUseLaunchers.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\IntelClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\IntelDPCPP-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CompilerId\VS-10.vcxproj.in;D:\Cmake\share\cmake-3.19\Modules\DartConfiguration.tcl.in;D:\Cmake\share\cmake-3.19\Modules\FindGettext.cmake;D:\Cmake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;D:\Cmake\share\cmake-3.19\Modules\FindPackageMessage.cmake;D:\Cmake\share\cmake-3.19\Modules\FindPython\Support.cmake;D:\Cmake\share\cmake-3.19\Modules\FindPython3.cmake;D:\Cmake\share\cmake-3.19\Modules\FindPythonInterp.cmake;D:\Cmake\share\cmake-3.19\Modules\GNUInstallDirs.cmake;D:\Cmake\share\cmake-3.19\Modules\Internal\FeatureTesting.cmake;D:\Cmake\share\cmake-3.19\Modules\Platform\Windows-Determine-CXX.cmake;D:\Cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;D:\Cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;D:\Cmake\share\cmake-3.19\Modules\Platform\Windows.cmake;D:\Cmake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\dev\Cura-4.8.0\cmake_build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/dev/Cura-4.8.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\Cmake\bin\cmake.exe -SC:/dev/Cura-4.8.0 -BC:/dev/Cura-4.8.0/cmake_build --check-stamp-file C:/dev/Cura-4.8.0/cmake_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\dev\Cura-4.8.0\cmake\CuraPluginInstall.cmake;C:\dev\Cura-4.8.0\cmake\CuraTests.cmake;C:\dev\Cura-4.8.0\cmake_build\CMakeFiles\3.19.0-rc3\CMakeCCompiler.cmake;C:\dev\Cura-4.8.0\cmake_build\CMakeFiles\3.19.0-rc3\CMakeCXXCompiler.cmake;C:\dev\Cura-4.8.0\cmake_build\CMakeFiles\3.19.0-rc3\CMakeRCCompiler.cmake;C:\dev\Cura-4.8.0\cmake_build\CMakeFiles\3.19.0-rc3\CMakeSystem.cmake;C:\dev\Cura-4.8.0\cmake_build\CMakeFiles\feature_tests.cxx;C:\dev\Cura-4.8.0\cura.desktop.in;C:\dev\Cura-4.8.0\cura\CuraVersion.py.in;C:\dev\Uranium\cmake\UraniumTranslationTools.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeCCompiler.cmake.in;D:\Cmake\share\cmake-3.19\Modules\CMakeCCompilerABI.c;D:\Cmake\share\cmake-3.19\Modules\CMakeCInformation.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeCXXCompiler.cmake.in;D:\Cmake\share\cmake-3.19\Modules\CMakeCXXCompilerABI.cpp;D:\Cmake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeCompilerIdDetection.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineCCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineCXXCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineCompileFeatures.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineCompilerABI.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineCompilerId.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineRCCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineSystem.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeFindBinUtils.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeParseArguments.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeRCCompiler.cmake.in;D:\Cmake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeSystem.cmake.in;D:\Cmake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeTestCCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeTestCXXCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeTestCompilerCommon.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeTestRCCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CTest.cmake;D:\Cmake\share\cmake-3.19\Modules\CTestTargets.cmake;D:\Cmake\share\cmake-3.19\Modules\CTestUseLaunchers.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\IntelClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\IntelDPCPP-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CompilerId\VS-10.vcxproj.in;D:\Cmake\share\cmake-3.19\Modules\DartConfiguration.tcl.in;D:\Cmake\share\cmake-3.19\Modules\FindGettext.cmake;D:\Cmake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;D:\Cmake\share\cmake-3.19\Modules\FindPackageMessage.cmake;D:\Cmake\share\cmake-3.19\Modules\FindPython\Support.cmake;D:\Cmake\share\cmake-3.19\Modules\FindPython3.cmake;D:\Cmake\share\cmake-3.19\Modules\FindPythonInterp.cmake;D:\Cmake\share\cmake-3.19\Modules\GNUInstallDirs.cmake;D:\Cmake\share\cmake-3.19\Modules\Internal\FeatureTesting.cmake;D:\Cmake\share\cmake-3.19\Modules\Platform\Windows-Determine-CXX.cmake;D:\Cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;D:\Cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;D:\Cmake\share\cmake-3.19\Modules\Platform\Windows.cmake;D:\Cmake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\dev\Cura-4.8.0\cmake_build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/dev/Cura-4.8.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+D:\Cmake\bin\cmake.exe -SC:/dev/Cura-4.8.0 -BC:/dev/Cura-4.8.0/cmake_build --check-stamp-file C:/dev/Cura-4.8.0/cmake_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\dev\Cura-4.8.0\cmake\CuraPluginInstall.cmake;C:\dev\Cura-4.8.0\cmake\CuraTests.cmake;C:\dev\Cura-4.8.0\cmake_build\CMakeFiles\3.19.0-rc3\CMakeCCompiler.cmake;C:\dev\Cura-4.8.0\cmake_build\CMakeFiles\3.19.0-rc3\CMakeCXXCompiler.cmake;C:\dev\Cura-4.8.0\cmake_build\CMakeFiles\3.19.0-rc3\CMakeRCCompiler.cmake;C:\dev\Cura-4.8.0\cmake_build\CMakeFiles\3.19.0-rc3\CMakeSystem.cmake;C:\dev\Cura-4.8.0\cmake_build\CMakeFiles\feature_tests.cxx;C:\dev\Cura-4.8.0\cura.desktop.in;C:\dev\Cura-4.8.0\cura\CuraVersion.py.in;C:\dev\Uranium\cmake\UraniumTranslationTools.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeCCompiler.cmake.in;D:\Cmake\share\cmake-3.19\Modules\CMakeCCompilerABI.c;D:\Cmake\share\cmake-3.19\Modules\CMakeCInformation.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeCXXCompiler.cmake.in;D:\Cmake\share\cmake-3.19\Modules\CMakeCXXCompilerABI.cpp;D:\Cmake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeCompilerIdDetection.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineCCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineCXXCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineCompileFeatures.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineCompilerABI.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineCompilerId.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineRCCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineSystem.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeFindBinUtils.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeParseArguments.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeRCCompiler.cmake.in;D:\Cmake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeSystem.cmake.in;D:\Cmake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeTestCCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeTestCXXCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeTestCompilerCommon.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeTestRCCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CTest.cmake;D:\Cmake\share\cmake-3.19\Modules\CTestTargets.cmake;D:\Cmake\share\cmake-3.19\Modules\CTestUseLaunchers.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\IntelClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\IntelDPCPP-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CompilerId\VS-10.vcxproj.in;D:\Cmake\share\cmake-3.19\Modules\DartConfiguration.tcl.in;D:\Cmake\share\cmake-3.19\Modules\FindGettext.cmake;D:\Cmake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;D:\Cmake\share\cmake-3.19\Modules\FindPackageMessage.cmake;D:\Cmake\share\cmake-3.19\Modules\FindPython\Support.cmake;D:\Cmake\share\cmake-3.19\Modules\FindPython3.cmake;D:\Cmake\share\cmake-3.19\Modules\FindPythonInterp.cmake;D:\Cmake\share\cmake-3.19\Modules\GNUInstallDirs.cmake;D:\Cmake\share\cmake-3.19\Modules\Internal\FeatureTesting.cmake;D:\Cmake\share\cmake-3.19\Modules\Platform\Windows-Determine-CXX.cmake;D:\Cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;D:\Cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;D:\Cmake\share\cmake-3.19\Modules\Platform\Windows.cmake;D:\Cmake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\dev\Cura-4.8.0\cmake_build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/dev/Cura-4.8.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+D:\Cmake\bin\cmake.exe -SC:/dev/Cura-4.8.0 -BC:/dev/Cura-4.8.0/cmake_build --check-stamp-file C:/dev/Cura-4.8.0/cmake_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\dev\Cura-4.8.0\cmake\CuraPluginInstall.cmake;C:\dev\Cura-4.8.0\cmake\CuraTests.cmake;C:\dev\Cura-4.8.0\cmake_build\CMakeFiles\3.19.0-rc3\CMakeCCompiler.cmake;C:\dev\Cura-4.8.0\cmake_build\CMakeFiles\3.19.0-rc3\CMakeCXXCompiler.cmake;C:\dev\Cura-4.8.0\cmake_build\CMakeFiles\3.19.0-rc3\CMakeRCCompiler.cmake;C:\dev\Cura-4.8.0\cmake_build\CMakeFiles\3.19.0-rc3\CMakeSystem.cmake;C:\dev\Cura-4.8.0\cmake_build\CMakeFiles\feature_tests.cxx;C:\dev\Cura-4.8.0\cura.desktop.in;C:\dev\Cura-4.8.0\cura\CuraVersion.py.in;C:\dev\Uranium\cmake\UraniumTranslationTools.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeCCompiler.cmake.in;D:\Cmake\share\cmake-3.19\Modules\CMakeCCompilerABI.c;D:\Cmake\share\cmake-3.19\Modules\CMakeCInformation.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeCXXCompiler.cmake.in;D:\Cmake\share\cmake-3.19\Modules\CMakeCXXCompilerABI.cpp;D:\Cmake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeCompilerIdDetection.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineCCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineCXXCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineCompileFeatures.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineCompilerABI.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineCompilerId.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineRCCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeDetermineSystem.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeFindBinUtils.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeParseArguments.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeRCCompiler.cmake.in;D:\Cmake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeSystem.cmake.in;D:\Cmake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeTestCCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeTestCXXCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeTestCompilerCommon.cmake;D:\Cmake\share\cmake-3.19\Modules\CMakeTestRCCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CTest.cmake;D:\Cmake\share\cmake-3.19\Modules\CTestTargets.cmake;D:\Cmake\share\cmake-3.19\Modules\CTestUseLaunchers.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\IntelClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\IntelDPCPP-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.19\Modules\CompilerId\VS-10.vcxproj.in;D:\Cmake\share\cmake-3.19\Modules\DartConfiguration.tcl.in;D:\Cmake\share\cmake-3.19\Modules\FindGettext.cmake;D:\Cmake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;D:\Cmake\share\cmake-3.19\Modules\FindPackageMessage.cmake;D:\Cmake\share\cmake-3.19\Modules\FindPython\Support.cmake;D:\Cmake\share\cmake-3.19\Modules\FindPython3.cmake;D:\Cmake\share\cmake-3.19\Modules\FindPythonInterp.cmake;D:\Cmake\share\cmake-3.19\Modules\GNUInstallDirs.cmake;D:\Cmake\share\cmake-3.19\Modules\Internal\FeatureTesting.cmake;D:\Cmake\share\cmake-3.19\Modules\Platform\Windows-Determine-CXX.cmake;D:\Cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;D:\Cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;D:\Cmake\share\cmake-3.19\Modules\Platform\Windows.cmake;D:\Cmake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\dev\Cura-4.8.0\cmake_build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\dev\Cura-4.8.0\cmake_build\CMakeFiles\Nightly">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\dev\Cura-4.8.0\cmake_build\ZERO_CHECK.vcxproj">
+      <Project>{30F1D1C5-961D-377D-96AA-664B88A3B2EA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
