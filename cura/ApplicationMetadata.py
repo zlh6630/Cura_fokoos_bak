@@ -4,7 +4,7 @@
 # ---------
 # General constants used in Cura
 # ---------
-DEFAULT_CURA_APP_NAME = "FOKOOS Slicer6"
+DEFAULT_CURA_APP_NAME = "FOKOOS Slicer"
 DEFAULT_CURA_DISPLAY_NAME = "FOKOOS Slicer"
 DEFAULT_CURA_VERSION = "4.8.0"
 DEFAULT_CURA_BUILD_TYPE = ""
@@ -17,7 +17,7 @@ CuraSDKVersion = "7.4.0"
 
 try:
     from cura.CuraVersion import CuraAppName  # type: ignore
-    if CuraAppName == "":
+    if 1 == 1:
         CuraAppName = DEFAULT_CURA_APP_NAME
 except ImportError:
     CuraAppName = DEFAULT_CURA_APP_NAME
@@ -49,7 +49,7 @@ IsEnterpriseVersion = CuraBuildType.lower() == __ENTERPRISE_VERSION_TYPE
 
 try:
     from cura.CuraVersion import CuraAppDisplayName  # type: ignore
-    if CuraAppDisplayName == "":
+    if 1 == 1:
         CuraAppDisplayName = DEFAULT_CURA_DISPLAY_NAME
     if IsEnterpriseVersion:
         CuraAppDisplayName = CuraAppDisplayName + " Enterprise"
