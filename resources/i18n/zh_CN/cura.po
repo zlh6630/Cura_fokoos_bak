@@ -1854,8 +1854,8 @@ msgstr "备份并同步您的 Cura 设置。"
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Account/GeneralOperations.qml:68
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/WelcomePages/CloudContent.qml:125
 msgctxt "@button"
-msgid "Sign in"
-msgstr "登录"
+msgid "offical websitue"
+msgstr "官网"
 
 #: /home/trin/Gedeeld/Projects/Cura/plugins/FirmwareUpdater/FirmwareUpdaterMachineAction.qml:31
 msgctxt "@title"
@@ -3130,7 +3130,7 @@ msgstr "打印机选择"
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Account/AccountWidget.qml:24
 msgctxt "@action:button"
-msgid "Sign in"
+msgid "offical websitue"
 msgstr "登录"
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Account/GeneralOperations.qml:40
@@ -3582,11 +3582,11 @@ msgstr "熔丝 3D 打印技术的的端对端解决方案。"
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Dialogs/AboutDialog.qml:85
 msgctxt "@info:credit"
 msgid ""
-"Cura is developed by Ultimaker B.V. in cooperation with the community.\n"
-"Cura proudly uses the following open source projects:"
+"The FOKOOS slicer is developed by FOKOOS Company.\n"
+"It is based on cura and uses the following open source projects:"
 msgstr ""
-"Cura 由 Ultimaker B.V. 与社区合作开发。\n"
-"Cura 使用以下开源项目："
+"FOKOOS slicer 由FOKOOS公司开发。\n"
+"它是基于Cura开发的，使用了以下开源项目："
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Dialogs/AboutDialog.qml:135
 msgctxt "@label"

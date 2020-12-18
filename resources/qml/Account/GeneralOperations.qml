@@ -65,7 +65,7 @@ Column
         anchors.horizontalCenter: parent.horizontalCenter
         width: UM.Theme.getSize("account_button").width
         height: UM.Theme.getSize("account_button").height
-        text: catalog.i18nc("@button", "Sign in")
+        text: catalog.i18nc("@button", "offical websitue")
         onClicked: Cura.API.account.login()
         fixedWidthMode: true
     }

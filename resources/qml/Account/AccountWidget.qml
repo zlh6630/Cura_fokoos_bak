@@ -24,7 +24,7 @@ Item
         text: catalog.i18nc("@action:button", "offical websitue")
 
         height: Math.round(0.5 * UM.Theme.getSize("main_window_header").height)
-        onClicked: Qt.openUrlExternally("https://www.baidu.com/")
+        onClicked: Qt.openUrlExternally("https://www.fokooshome.com/")
        
 
          
