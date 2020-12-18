@@ -1862,8 +1862,8 @@ msgstr "Cura ayarlarınızı yedekleyin ve senkronize edin."
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Account/GeneralOperations.qml:68
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/WelcomePages/CloudContent.qml:125
 msgctxt "@button"
-msgid "Sign in"
-msgstr "Giriş yap"
+msgid "offical websitue"
+msgstr "Web sitesi"
 
 #: /home/trin/Gedeeld/Projects/Cura/plugins/FirmwareUpdater/FirmwareUpdaterMachineAction.qml:31
 msgctxt "@title"
@@ -3140,8 +3140,8 @@ msgstr "Yazıcı seçimi"
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Account/AccountWidget.qml:24
 msgctxt "@action:button"
-msgid "Sign in"
-msgstr "Giriş yap"
+msgid "offical websitue"
+msgstr "Web sitesi"
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Account/GeneralOperations.qml:40
 msgctxt "@label"

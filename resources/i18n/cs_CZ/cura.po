@@ -1869,8 +1869,8 @@ msgstr "Zálohovat a synchronizovat vaše nastavení Cura."
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Account/GeneralOperations.qml:68
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/WelcomePages/CloudContent.qml:125
 msgctxt "@button"
-msgid "Sign in"
-msgstr "Přihlásit se"
+msgid "offical websitue"
+msgstr "offical websitue"
 
 #: /home/trin/Gedeeld/Projects/Cura/plugins/FirmwareUpdater/FirmwareUpdaterMachineAction.qml:31
 msgctxt "@title"
@@ -3149,8 +3149,8 @@ msgstr "Výběr tiskárny"
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Account/AccountWidget.qml:24
 msgctxt "@action:button"
-msgid "Sign in"
-msgstr "Přihlásit se"
+msgid "offical websitue"
+msgstr "Webové stránky"
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Account/GeneralOperations.qml:40
 msgctxt "@label"

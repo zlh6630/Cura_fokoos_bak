@@ -1874,8 +1874,8 @@ msgstr "Резервное копирование и синхронизация 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Account/GeneralOperations.qml:68
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/WelcomePages/CloudContent.qml:125
 msgctxt "@button"
-msgid "Sign in"
-msgstr "Войти"
+msgid "offical websitue"
+msgstr "Официальн сайт"
 
 #: /home/trin/Gedeeld/Projects/Cura/plugins/FirmwareUpdater/FirmwareUpdaterMachineAction.qml:31
 msgctxt "@title"
@@ -3154,8 +3154,8 @@ msgstr "Выбор принтера"
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Account/AccountWidget.qml:24
 msgctxt "@action:button"
-msgid "Sign in"
-msgstr "Войти"
+msgid "offical websitue"
+msgstr "Официальн сайт"
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Account/GeneralOperations.qml:40
 msgctxt "@label"

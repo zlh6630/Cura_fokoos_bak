@@ -1858,8 +1858,8 @@ msgstr "Cura のバックアップおよび同期を設定します。"
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Account/GeneralOperations.qml:68
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/WelcomePages/CloudContent.qml:125
 msgctxt "@button"
-msgid "Sign in"
-msgstr "サインイン"
+msgid "offical websitue"
+msgstr "ホームページ"
 
 #: /home/trin/Gedeeld/Projects/Cura/plugins/FirmwareUpdater/FirmwareUpdaterMachineAction.qml:31
 msgctxt "@title"
@@ -3133,8 +3133,8 @@ msgstr "プリンターの選択"
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Account/AccountWidget.qml:24
 msgctxt "@action:button"
-msgid "Sign in"
-msgstr "サインイン"
+msgid "offical websitue"
+msgstr "ホームページ"
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Account/GeneralOperations.qml:40
 msgctxt "@label"

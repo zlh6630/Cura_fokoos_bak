@@ -1877,8 +1877,8 @@ msgstr "Efetue a cópia de segurança e sincronize as suas definições do Cura.
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Account/GeneralOperations.qml:68
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/WelcomePages/CloudContent.qml:125
 msgctxt "@button"
-msgid "Sign in"
-msgstr "Iniciar sessão"
+msgid "offical websitue"
+msgstr "Site Oficial"
 
 #: /home/trin/Gedeeld/Projects/Cura/plugins/FirmwareUpdater/FirmwareUpdaterMachineAction.qml:31
 msgctxt "@title"
@@ -3162,8 +3162,8 @@ msgstr "Seleção de Impressora"
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Account/AccountWidget.qml:24
 msgctxt "@action:button"
-msgid "Sign in"
-msgstr "Iniciar sessão"
+msgid "offical websitue"
+msgstr "Site Oficial"
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Account/GeneralOperations.qml:40
 msgctxt "@label"

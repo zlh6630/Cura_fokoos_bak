@@ -1786,8 +1786,8 @@ msgstr "Maak een back-up van uw Cura-instellingen en synchroniseer deze."
 
 #: /home/trin/Gedeeld/Projects/Cura/plugins/CuraDrive/src/qml/pages/WelcomePage.qml:51 /home/trin/Gedeeld/Projects/Cura/plugins/Toolbox/resources/qml/pages/WelcomePage.qml:39 /home/trin/Gedeeld/Projects/Cura/resources/qml/Account/GeneralOperations.qml:68 /home/trin/Gedeeld/Projects/Cura/resources/qml/WelcomePages/CloudContent.qml:125
 msgctxt "@button"
-msgid "Sign in"
-msgstr "Aanmelden"
+msgid "offical websitue"
+msgstr "Officiele website"
 
 #: /home/trin/Gedeeld/Projects/Cura/plugins/FirmwareUpdater/FirmwareUpdaterMachineAction.qml:31
 msgctxt "@title"
@@ -3021,8 +3021,8 @@ msgstr "Printerselectie"
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Account/AccountWidget.qml:24
 msgctxt "@action:button"
-msgid "Sign in"
-msgstr "Aanmelden"
+msgid "offical websitue"
+msgstr "Officiele website"
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Account/GeneralOperations.qml:40
 msgctxt "@label"
