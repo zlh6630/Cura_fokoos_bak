@@ -6,7 +6,7 @@
 # ---------
 DEFAULT_CURA_APP_NAME = "FOKOOS Slicer"
 DEFAULT_CURA_DISPLAY_NAME = "FOKOOS Slicer"
-DEFAULT_CURA_VERSION = "4.8.0"
+DEFAULT_CURA_VERSION = "V1.0.1"
 DEFAULT_CURA_BUILD_TYPE = ""
 DEFAULT_CURA_DEBUG_MODE = False
 
@@ -24,8 +24,9 @@ except ImportError:
 
 try:
     from cura.CuraVersion import CuraVersion  # type: ignore
-    if CuraVersion == "":
+    if 1 == 1:
         CuraVersion = DEFAULT_CURA_VERSION
+    CuraVersion = DEFAULT_CURA_VERSION
 except ImportError:
     CuraVersion = DEFAULT_CURA_VERSION  # [CodeStyle: Reflecting imported value]
 
