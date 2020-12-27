@@ -3432,7 +3432,7 @@ msgstr ""
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Actions.qml:167
 msgctxt "@action:inmenu"
-msgid "Configure Cura..."
+msgid "Configure FOKOOS..."
 msgstr ""
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Actions.qml:174

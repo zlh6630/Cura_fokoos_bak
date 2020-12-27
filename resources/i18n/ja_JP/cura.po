@@ -3204,8 +3204,8 @@ msgstr "右サイドビュー"
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Actions.qml:167
 msgctxt "@action:inmenu"
-msgid "Configure Cura..."
-msgstr "Curaを構成する..."
+msgid "Configure FOKOOS..."
+msgstr "FOKOOSを構成する..."
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Actions.qml:174
 msgctxt "@action:inmenu menubar:printer"

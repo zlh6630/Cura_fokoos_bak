@@ -3209,8 +3209,8 @@ msgstr "Ansicht von rechts"
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Actions.qml:167
 msgctxt "@action:inmenu"
-msgid "Configure Cura..."
-msgstr "Cura konfigurieren..."
+msgid "Configure FOKOOS..."
+msgstr "FOKOOS konfigurieren..."
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Actions.qml:174
 msgctxt "@action:inmenu menubar:printer"

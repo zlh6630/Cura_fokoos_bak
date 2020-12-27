@@ -18,7 +18,7 @@ ColumnLayout
     BackupListItemDetailsRow
     {
         iconSource: UM.Theme.getIcon("application")
-        label: catalog.i18nc("@backuplist:label", "Cura Version")
+        label: catalog.i18nc("@backuplist:label", "FOKOOS Slicer Version")
         value: backupDetailsData.metadata.cura_release
     }
 

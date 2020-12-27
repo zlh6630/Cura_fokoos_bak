@@ -3216,8 +3216,8 @@ msgstr "Pohled z pravé strany"
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Actions.qml:167
 msgctxt "@action:inmenu"
-msgid "Configure Cura..."
-msgstr "Konfigurovat Cura..."
+msgid "Configure FOKOOS..."
+msgstr "Konfigurovat FOKOOS..."
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Actions.qml:174
 msgctxt "@action:inmenu menubar:printer"

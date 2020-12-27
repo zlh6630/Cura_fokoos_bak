@@ -19,7 +19,7 @@ class UpdateChecker(Extension):
     The plugin is currently only usable for applications maintained by Ultimaker. But it should be relatively easy
     to change it to work for other applications.
     """
-    url = "https://software.ultimaker.com/latest.json"
+    url = "https:www.baidu.com"
 
     def __init__(self):
         super().__init__()
@@ -48,6 +48,7 @@ class UpdateChecker(Extension):
         the update for a particular version. When manually checking for updates,
         the user wants to display the update even if he's already seen it.
         """
+        print("www.baidu.com link")
         self._download_url = None
         job = UpdateCheckerJob(silent, display_same_version, self.url, self._onActionTriggered, self._onSetDownloadUrl)
         job.start()

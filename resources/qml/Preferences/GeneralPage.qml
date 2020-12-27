@@ -819,7 +819,7 @@ UM.PreferencesPage
                     text: catalog.i18nc("@action:button", "More information")
                     onClicked:
                     {
-                        CuraApplication.showMoreInformationDialogForAnonymousDataCollection();
+                       // CuraApplication.showMoreInformationDialogForAnonymousDataCollection();
                     }
                 }
             }

@@ -26,7 +26,6 @@ try:
     from cura.CuraVersion import CuraVersion  # type: ignore
     if 1 == 1:
         CuraVersion = DEFAULT_CURA_VERSION
-    CuraVersion = DEFAULT_CURA_VERSION
 except ImportError:
     CuraVersion = DEFAULT_CURA_VERSION  # [CodeStyle: Reflecting imported value]
 
