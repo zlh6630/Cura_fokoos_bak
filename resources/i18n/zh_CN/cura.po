@@ -3208,7 +3208,7 @@ msgstr "右视图"
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Actions.qml:167
 msgctxt "@action:inmenu"
-msgid "Configure FOKOOS..."
+msgid "Configure Cura..."
 msgstr "配置 Cura..."
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Actions.qml:174

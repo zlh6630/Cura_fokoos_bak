@@ -3213,7 +3213,7 @@ msgstr "Visão do Lado Direito"
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Actions.qml:167
 msgctxt "@action:inmenu"
-msgid "Configure FOKOOS..."
+msgid "Configure Cura..."
 msgstr "Configurar Cura..."
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Actions.qml:174

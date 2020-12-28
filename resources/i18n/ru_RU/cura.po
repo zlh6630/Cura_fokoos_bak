@@ -3221,8 +3221,8 @@ msgstr "Вид справа"
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Actions.qml:167
 msgctxt "@action:inmenu"
-msgid "Configure FOKOOS..."
-msgstr "Настроить FOKOOS..."
+msgid "Configure Cura..."
+msgstr "Настроить Cura..."
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Actions.qml:174
 msgctxt "@action:inmenu menubar:printer"

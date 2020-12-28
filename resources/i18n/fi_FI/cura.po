@@ -3183,8 +3183,8 @@ msgstr ""
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Actions.qml:167
 msgctxt "@action:inmenu"
-msgid "Configure FOKOOS..."
-msgstr "Määritä FOKOOS asetukset..."
+msgid "Configure Cura..."
+msgstr "Määritä Curan asetukset..."
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Actions.qml:174
 msgctxt "@action:inmenu menubar:printer"

@@ -1,5 +1,5 @@
 {
-    "name": "Odin-5 F3",
+    "name": "FOKOOS Odin-5 F3",
     "version": 2,
     "inherits": "fdmprinter",
     "metadata": {
@@ -7,6 +7,7 @@
 		"author": "Fokoos",
         "manufacturer": "Fokoos",
         "file_formats": "text/x-gcode",
+        "platform": "fokoos_odin-5_f3.stl",
         "preferred_quality_type": "fast",
         "machine_extruder_trains":
         {

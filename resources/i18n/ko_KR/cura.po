@@ -3199,8 +3199,8 @@ msgstr "오른쪽에서 보기"
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Actions.qml:167
 msgctxt "@action:inmenu"
-msgid "Configure FOKOOS..."
-msgstr "FOKOOS 구성 ..."
+msgid "Configure Cura..."
+msgstr "Cura 구성 ..."
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Actions.qml:174
 msgctxt "@action:inmenu menubar:printer"
