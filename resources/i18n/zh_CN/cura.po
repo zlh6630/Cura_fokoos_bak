@@ -3467,10 +3467,10 @@ msgstr "熔丝 3D 打印技术的的端对端解决方案。"
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Dialogs/AboutDialog.qml:85
 msgctxt "@info:credit"
 msgid ""
-"The FOKOOS slicer is developed by FOKOOS Company.\n"
+"The FOKOOS Slicer is developed by FOKOOS Company.\n"
 "It is based on cura and uses the following open source projects:"
 msgstr ""
-"FOKOOS slicer 由FOKOOS公司开发。\n"
+"FOKOOS Slicer 由FOKOOS公司开发。\n"
 "它是基于Cura开发的，使用了以下开源项目："
 
 #: /home/trin/Gedeeld/Projects/Cura/resources/qml/Dialogs/AboutDialog.qml:135

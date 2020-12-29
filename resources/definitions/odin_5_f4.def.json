@@ -4,8 +4,8 @@
     "inherits": "fdmprinter",
     "metadata": {
         "visible": true,
-		"author": "Fokoos",
-        "manufacturer": "Fokoos",
+		"author": "FOKOOS",
+        "manufacturer": "FOKOOS",
         "file_formats": "text/x-gcode",
         "preferred_quality_type": "fast",
         "machine_extruder_trains":
