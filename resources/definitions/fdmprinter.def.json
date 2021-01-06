@@ -1852,7 +1852,7 @@
                     "description": "The amount of overlap between the infill and the walls as a percentage of the infill line width. A slight overlap allows the walls to connect firmly to the infill.",
                     "unit": "%",
                     "type": "float",
-                    "default_value": 10,
+                    "default_value": 20,
                     "value": "10 if infill_sparse_density < 95 and infill_pattern != 'concentric' else 0",
                     "minimum_value_warning": "-50",
                     "maximum_value_warning": "100",
@@ -5185,7 +5185,7 @@
                         "raft": "Raft",
                         "none": "None"
                     },
-                    "default_value": "brim",
+                    "default_value": "skirt",
                     "resolve": "extruderValue(adhesion_extruder_nr, 'adhesion_type')",
                     "settable_per_mesh": false,
                     "settable_per_extruder": false
