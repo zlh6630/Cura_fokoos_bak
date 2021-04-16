@@ -122,7 +122,7 @@ Item
                 height: createAccountButton.height
                 width: createAccountButton.width
                 anchors.horizontalCenter: parent.horizontalCenter
-                text: catalog.i18nc("@button", "offical websitue")
+                text: catalog.i18nc("@button", "Website")
                 onClicked: Cura.API.account.login()
                 // Content Item is used in order to align the text inside the button. Without it, when resizing the
                 // button, the text will be aligned on the left

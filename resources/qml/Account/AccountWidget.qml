@@ -21,7 +21,7 @@ Item
 
         anchors.verticalCenter: parent.verticalCenter
 
-        text: catalog.i18nc("@action:button", "offical websitue")
+        text: catalog.i18nc("@action:button", "Website")
 
         height: Math.round(0.5 * UM.Theme.getSize("main_window_header").height)
         onClicked: Qt.openUrlExternally("https://www.fokoos.com/")
